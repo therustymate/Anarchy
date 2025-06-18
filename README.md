@@ -1,6 +1,6 @@
 # Anarchy
 **Anarchy** is an advanced multithreaded brute-forcer for web login forms.<br>
-It supports `POST` and `GET` methods, custom parameter keys and multiple verbosity levels.<br>
+It supports `POST` methods, custom parameter keys and multiple verbosity levels.<br>
 Designed for penetration testing and research in ethical hacking environments.<br>
 
 Current Version: **1.0 (Alpha Test)**
@@ -11,7 +11,7 @@ Current Version: **1.0 (Alpha Test)**
 This tool is intended for **educational and authorized penetration testing** only. Unauthorized use against systems you do not own or have explicit permission to test is illegal.
 
 ## Features
-- Supports `GET` and `POST` login methods
+- Supports `POST` login methods
 - Multi-threaded (default: 200 workers)
 - Custom username/password parameter keys
 - Custom "failure condition" string detection
@@ -46,8 +46,8 @@ python Anarchy.py -t [TARGET] -u [USER] -l [PWD_LIST] -p [PARAM] -m [METHOD] -f 
 | `-t`, `--target`      | Target login URL (e.g., http://example.com/login)             |
 | `-u`, `--user`        | Username to brute force (e.g., root, admin)                   |
 | `-l`, `--list`        | Path to password list (e.g. rockyou.txt)                      |
-| `-p`, `--parameters`  | POST/GET parameters (e.g. username/password)                  |
-| `-m`, `--method`      | HTTP method (`POST` or `GET`)                                 |
+| `-p`, `--parameters`  | POST parameters (e.g. username/password)                      |
+| `-m`, `--method`      | HTTP method (`POST` only)                                     |
 | `-f`, `--failed`      | Failure string to detect unsuccessful login (e.g. invalid)    |
 
 ### Optional Flags
